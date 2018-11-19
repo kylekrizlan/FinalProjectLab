@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FinalProjectLab</string>
+
+    <string name="medical_i_d">Medical I.D.</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="health_records">Health Records</string>
+    <string name="medication">Medication</string>
+    <string name="_175cm">175cm</string>
+    <string name="today">Today</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="_60_kgs">60 kgs</string>
+    <string name="bmi">BMI:</string>
+    <string name="_18">18</string>
+    <string name="dietary_energy">Dietary Energy:</string>
+    <string name="favorites">Favorites</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="calcium">Calcium:</string>
+    <string name="calories">Calories:</string>
+    <string name="_150">150</string>
+    <string name="string_150" />
+    <string name="_15_grams">15 grams</string>
+    <string name="_420_cal">420 cal.</string>
+    <string name="_60_kg">60 kg</string>
+    <string name="sleep">Sleep</string>
+    <string name="day">Day</string>
+    <string name="hours_of_sleep">Hours of sleep:</string>
+    <string name="_8_hrs">8 hrs.</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="health_record">Health Record</string>
+    <string name="exercise">Exercise</string>
+    <string name="health_wellness"><![CDATA[Health & Wellness]]></string>
+    <string name="paracetamol">Paracetamol</string>
+    <string name="insulin">Insulin</string>
+    <string name="diatabs">Diatabs</string>
+    <string name="_1_january_1998_20_years_old">1 January 1998 (20 years old)</string>
+    <string name="juan_dela_cruz">Juan Dela Cruz</string>
+    <string name="o">O+</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="_175_cm">175 cm</string>
+    <string name="all_records">All records</string>
+    <string name="lab_results">Lab Results</string>
+    <string name="immunizations">Immunizations</string>
+</resources>
