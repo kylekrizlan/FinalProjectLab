@@ -43,4 +43,20 @@
     <string name="lab_results">Lab Results</string>
     <string name="immunizations">Immunizations</string>
     <string name="bmii">BMI</string>
+    <string name="todo">TODO</string>
+    <string name="chest_workout">Chest Workout</string>
+    <string name="_25_push_ups">25 Push ups</string>
+    <string name="_15_declined_bench_press">15 declined Bench Press</string>
+    <string name="_20_sec_planks">20 sec Planks</string>
+    <string name="_15_inclined_bench_press">15 Inclined Bench Press</string>
+    <string name="_15_dumbell_curls">15 dumbell curls</string>
+    <string name="arm_workout">Arm Workout</string>
+    <string name="_12_bench_press">12 Bench press</string>
+    <string name="_12_barbell_curls">12 Barbell curls</string>
+    <string name="core_workout">Core Workout</string>
+    <string name="_15_push_ups">15 Push ups</string>
+    <string name="_10_sec_planks">10 sec Planks</string>
+    <string name="_15_sit_ups">15 Sit ups</string>
+    <string name="_10_crunches">10 Crunches</string>
+    <string name="_4_sets_of">4 sets of:</string>
 </resources>
