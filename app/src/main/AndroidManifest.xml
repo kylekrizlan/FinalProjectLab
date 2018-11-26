@@ -22,7 +22,14 @@
         <activity android:name=".sleep" />
         <activity android:name=".medication" />
         <activity android:name=".medicalid" />
-        <activity android:name=".healthrecords"></activity>
+        <activity android:name=".healthrecords" />
+        <activity android:name=".coreworkout" />
+        <activity android:name=".armworkout" />
+        <activity android:name=".chestworkout" />
+        <activity android:name=".warmup" />
+        <activity android:name=".allrecords" />
+        <activity android:name=".labresults" />
+        <activity android:name=".immunizations"></activity>
     </application>
 
 </manifest>

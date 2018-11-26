@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".healthrecords">
-
+    tools:context=".chestworkout">
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
@@ -15,7 +14,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#de9292"
-        android:onClick="toMedication"
         android:text="@string/medication"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +31,6 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="8dp"
         android:background="#de9292"
-        android:onClick="toHealthrecord"
         android:text="@string/health_records"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +46,6 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:background="#de9292"
-        android:onClick="toMedicalID"
         android:text="@string/medical_i_d"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,17 +54,17 @@
         app:layout_constraintVertical_bias="0.831" />
 
     <TextView
-        android:id="@+id/textView30"
-        android:layout_width="345dp"
+        android:id="@+id/textView34"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/holo_red_dark"
-        android:text="@string/health_records"
+        android:background="#FFF1BE59"
+        android:text="@string/chest_workout"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,96 +73,92 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.016" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="86dp"
-        android:layout_height="115dp"
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:srcCompat="@drawable/fl"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="86dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/in" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="86dp"
-        android:layout_height="92dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/button14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:srcCompat="@drawable/hr" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="229dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
-        android:background="#FFE83838"
-        android:text="All Records"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/_25_push_ups"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="33sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="229dp"
-        android:layout_height="70dp"
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:background="#FFE83838"
-        android:text="@string/lab_results"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/_15_declined_bench_press"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="229dp"
-        android:layout_height="70dp"
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="332dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFE83838"
-        android:text="@string/immunizations"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/_20_sec_planks"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15"
-        app:layout_constraintVertical_bias="0.184" />
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/_15_inclined_bench_press"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/_4_sets_of"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
 </android.support.constraint.ConstraintLayout>
