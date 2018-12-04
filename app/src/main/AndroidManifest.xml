@@ -29,7 +29,8 @@
         <activity android:name=".warmup" />
         <activity android:name=".allrecords" />
         <activity android:name=".labresults" />
-        <activity android:name=".immunizations"></activity>
+        <activity android:name=".immunizations" />
+        <activity android:name=".day"></activity>
     </application>
 
 </manifest>
