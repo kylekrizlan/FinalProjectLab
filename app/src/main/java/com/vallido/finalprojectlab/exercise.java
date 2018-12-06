@@ -12,6 +12,22 @@ public class exercise extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
     }
+    public void toWarmup(View view) {
+        Intent i = new Intent(getApplicationContext(), warmup.class);
+        startActivity(i);
+    }
+    public void toChest(View view) {
+        Intent i = new Intent(getApplicationContext(), chestworkout.class);
+        startActivity(i);
+    }
+    public void toCore(View view) {
+        Intent i = new Intent(getApplicationContext(), coreworkout.class);
+        startActivity(i);
+    }
+    public void toArm(View view) {
+        Intent i = new Intent(getApplicationContext(), armworkout.class);
+        startActivity(i);
+    }
     public void toMedication(View view) {
         Intent i = new Intent(getApplicationContext(), medication.class);
         startActivity(i);
