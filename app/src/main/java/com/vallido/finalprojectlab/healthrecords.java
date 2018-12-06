@@ -12,6 +12,18 @@ public class healthrecords extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_healthrecords);
     }
+    public void toAllRecords(View view) {
+        Intent i = new Intent(getApplicationContext(), allrecords.class);
+        startActivity(i);
+    }
+    public void toLabResults(View view) {
+        Intent i = new Intent(getApplicationContext(), labresults.class);
+        startActivity(i);
+    }
+    public void toImmunization(View view) {
+        Intent i = new Intent(getApplicationContext(), immunizations.class);
+        startActivity(i);
+    }
     public void toMedication(View view) {
         Intent i = new Intent(getApplicationContext(), medication.class);
         startActivity(i);

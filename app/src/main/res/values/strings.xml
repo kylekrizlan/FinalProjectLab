@@ -2,8 +2,8 @@
     <string name="app_name">FinalProjectLab</string>
 
     <string name="medical_i_d">Medical I.D.</string>
-    <string name="weight">Weight:</string>
-    <string name="height">Height:</string>
+    <string name="weight">Weight(kgs):</string>
+    <string name="height">Height(cm):</string>
     <string name="health_records">Health Records</string>
     <string name="medication">Medication</string>
     <string name="_175cm">175cm</string>
@@ -59,4 +59,14 @@
     <string name="_15_sit_ups">15 Sit ups</string>
     <string name="_10_crunches">10 Crunches</string>
     <string name="_4_sets_of">4 sets of:</string>
+    <string name="vsuwght">Very Severely Underweight</string>
+    <string name="suwght">Severely Underweight</string>
+    <string name="uwght">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="owght">Overweight</string>
+    <string name="mobese">Moderately Obese</string>
+    <string name="sobese">Severely Obese</string>
+    <string name="vsobese">Very Severely Obese</string>
+    <string name="allrecords">All Records</string>
+
 </resources>
