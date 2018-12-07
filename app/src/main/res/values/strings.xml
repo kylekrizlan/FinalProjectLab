@@ -62,4 +62,12 @@
     <string name="ascorbic_acid">ascorbic_acid</string>
     <string name="mx3">mx3</string>
     <string name="home">HOME</string>
+    <string name="vsuwght">Very Severely Underweight</string>
+    <string name="suwght">Severely Underweight</string>
+    <string name="uwght">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="owght">Overweight</string>
+    <string name="mobese">Moderately Obese</string>
+    <string name="sobese">Severely Obese</string>
+    <string name="vsobese">Very Severely Obese</string>
 </resources>
