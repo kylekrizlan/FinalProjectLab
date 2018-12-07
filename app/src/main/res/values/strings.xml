@@ -70,4 +70,10 @@
     <string name="mobese">Moderately Obese</string>
     <string name="sobese">Severely Obese</string>
     <string name="vsobese">Very Severely Obese</string>
+    <string name="textview">TextView</string>
+    <string name="edit">Edit</string>
+
+
+    <string name="name">Name</string>
+
 </resources>
