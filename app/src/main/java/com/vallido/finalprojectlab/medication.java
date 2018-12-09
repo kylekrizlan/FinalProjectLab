@@ -12,8 +12,9 @@ public class medication extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medication);
     }
-    public void toMedication(View view) {
-        Intent i = new Intent(getApplicationContext(), medication.class);
+
+    public void toHome(View view) {
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
     public void toHealthrecord(View view) {
