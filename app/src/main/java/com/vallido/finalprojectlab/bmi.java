@@ -56,7 +56,8 @@ public class bmi extends AppCompatActivity {
         } else {
             bmiLabel = getString(R.string.vsobese);
         }
-        bmires.setText(Float.toString(bmi));
+        String str = String.format("%.2f",bmi);
+        bmires.setText(str);
         result.setText(bmiLabel);
     }
     public void toMedication(View view) {

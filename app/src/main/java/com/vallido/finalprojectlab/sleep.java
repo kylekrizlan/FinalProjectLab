@@ -9,14 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class sleep extends AppCompatActivity {
 
     EditText sleephrs;
     TextView sleephrs2;
-    Button saveButton, loadButton;
+    Button saveButton;
     String fname = "sleep.txt";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +29,6 @@ public class sleep extends AppCompatActivity {
         sleephrs = findViewById(R.id.sleephours);
         sleephrs2 = findViewById(R.id.sleephours2);
         saveButton = findViewById(R.id.save);
-        loadButton = findViewById(R.id.load);
         String hrs = "";
 
         saveButton.setOnClickListener(new View.OnClickListener() {
@@ -38,26 +41,27 @@ public class sleep extends AppCompatActivity {
                     byte[] buf = hrs.getBytes();
                     fos.write(buf);
                     fos.close();
+                    Toast.makeText(getBaseContext(),"saved",Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
-        });
-        loadButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+
+                String filename=fname;
+                StringBuffer stringBuffer = new StringBuffer();
                 try {
-                    FileInputStream fin = openFileInput(fname);
-                    int c;
-                    String temp = "";
-                    while ((c = fin.read()) != -1) {
-                        temp = temp + Character.toString((char) c);
+                    //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
+                    BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                            openFileInput(filename)));
+                    String inputString;
+                    //Reading data line by line and storing it into the stringbuffer
+                    while ((inputString = inputReader.readLine()) != null) {
+                        stringBuffer.append(inputString + "\n");
                     }
-                    fin.close();
-                    sleephrs2.setText(temp);
-                    Toast.makeText(getBaseContext(), "updated", Toast.LENGTH_SHORT).show();
-                } catch (Exception e) {
+
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
+                sleephrs2.setText(stringBuffer.toString());
             }
         });
     }

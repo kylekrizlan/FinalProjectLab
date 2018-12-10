@@ -14,7 +14,7 @@ import java.io.FileOutputStream;
 public class editpage extends AppCompatActivity {
     EditText textName, textDob, textBt, textHt, textWt;
     Button saveButton;
-    public String fname="name.txt", fdob="dob.txt", fbt="bt.txt", fht="ht.txt", fwt="wt.txt";
+    public String flname="name.txt", fldob="dob.txt", flbt="bt.txt", flht="ht.txt", flwt="wt.txt";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,27 +38,27 @@ public class editpage extends AppCompatActivity {
                 String wt=textWt.getText().toString();
 
                 try {
-                    FileOutputStream fos1 = openFileOutput(fname, Context.MODE_PRIVATE);
+                    FileOutputStream fos1 = openFileOutput(flname, Context.MODE_PRIVATE);
                     byte[] buf1 = name.getBytes();
                     fos1.write(buf1);
                     fos1.close();
 
-                    FileOutputStream fos2 = openFileOutput(fdob, Context.MODE_PRIVATE);
+                    FileOutputStream fos2 = openFileOutput(fldob, Context.MODE_PRIVATE);
                     byte[] buf2 = dob.getBytes();
                     fos2.write(buf2);
                     fos2.close();
 
-                    FileOutputStream fos3 = openFileOutput(fbt, Context.MODE_PRIVATE);
+                    FileOutputStream fos3 = openFileOutput(flbt, Context.MODE_PRIVATE);
                     byte[] buf3 = bt.getBytes();
                     fos3.write(buf3);
                     fos3.close();
 
-                    FileOutputStream fos4 = openFileOutput(fht, Context.MODE_PRIVATE);
+                    FileOutputStream fos4 = openFileOutput(flht, Context.MODE_PRIVATE);
                     byte[] buf4 = ht.getBytes();
                     fos4.write(buf4);
                     fos4.close();
 
-                    FileOutputStream fos5 = openFileOutput(fwt, Context.MODE_PRIVATE);
+                    FileOutputStream fos5 = openFileOutput(flwt, Context.MODE_PRIVATE);
                     byte[] buf5 = wt.getBytes();
                     fos5.write(buf5);
                     fos5.close();
@@ -67,6 +67,11 @@ public class editpage extends AppCompatActivity {
                 } catch (Exception e ){
                     e.printStackTrace();
                 }
+                Intent i = new Intent(getApplicationContext(), medicalid.class);
+                i.putExtra("name", name);
+                setResult(2, i);
+                startActivity(i);
+
             }
         });
     }
