@@ -1,5 +1,6 @@
 package com.vallido.finalprojectlab;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,8 +24,8 @@ public class medicalid extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicalid);
 
-        textName = findViewById(R.id.name);
-        textDob = findViewById(R.id.dob);
+        textName = findViewById(R.id.Name2);
+        textDob = findViewById(R.id.Dob2);
         textBt = findViewById(R.id.bt2);
         textHt = findViewById(R.id.ht2);
         textWt = findViewById(R.id.wt2);
@@ -36,85 +37,40 @@ public class medicalid extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Intent i=new Intent(medicalid.this, editpage.class);
-                startActivityForResult(i, 2);
+                startActivityForResult(i, 1);
+
             }
         });
-        String filename1="flname.txt";
-        StringBuffer name = new StringBuffer();
-        try {
-            //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
-            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
-                    openFileInput(filename1)));
-            String inputString;
-            //Reading data line by line and storing it into the stringbuffer
-            while ((inputString = inputReader.readLine()) != null) {
-                name.append(inputString + "\n");
+
+
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        textName = findViewById(R.id.Name2);
+        textDob = findViewById(R.id.Dob2);
+        textBt = findViewById(R.id.bt2);
+        textHt = findViewById(R.id.ht2);
+        textWt = findViewById(R.id.wt2);
+        editButton = findViewById(R.id.edit);
+
+        if (requestCode == 1) {
+            if(resultCode == Activity.RESULT_OK){
+                String name=data.getStringExtra("name");
+                String dob=data.getStringExtra("dob");
+                String bt=data.getStringExtra("bt");
+                String ht=data.getStringExtra("ht");
+                String wt=data.getStringExtra("wt");
+                textName.setText(name);
+                textDob.setText(dob);
+                textBt.setText(bt);
+                textHt.setText(ht);
+                textWt.setText(wt);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }textName.setText(name.toString());
-
-        String filename2="fldob.txt";
-        StringBuffer dob = new StringBuffer();
-        try {
-            //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
-            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
-                    openFileInput(filename2)));
-            String inputString;
-            //Reading data line by line and storing it into the stringbuffer
-            while ((inputString = inputReader.readLine()) != null) {
-                dob.append(inputString + "\n");
+            if (resultCode == Activity.RESULT_CANCELED) {
+                //Write your code if there's no result
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }textName.setText(dob.toString());
-
-        String filename3="flbt.txt";
-        StringBuffer bt = new StringBuffer();
-        try {
-            //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
-            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
-                    openFileInput(filename3)));
-            String inputString;
-            //Reading data line by line and storing it into the stringbuffer
-            while ((inputString = inputReader.readLine()) != null) {
-                bt.append(inputString + "\n");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }textName.setText(bt.toString());
-
-        String filename4="flht.txt";
-        StringBuffer ht = new StringBuffer();
-        try {
-            //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
-            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
-                    openFileInput(filename4)));
-            String inputString;
-            //Reading data line by line and storing it into the stringbuffer
-            while ((inputString = inputReader.readLine()) != null) {
-                ht.append(inputString + "\n");
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }textName.setText(ht.toString());
-
-        String filename5="flwt.txt";
-        StringBuffer wt = new StringBuffer();
-        try {
-            //Attaching BufferedReader to the FileInputStream by the help of InputStreamReader
-            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
-                    openFileInput(filename5)));
-            String inputString;
-            //Reading data line by line and storing it into the stringbuffer
-            while ((inputString = inputReader.readLine()) != null) {
-                wt.append(inputString + "\n");
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }textName.setText(wt.toString());
+        }
     }
     public void toHome (View view) {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);

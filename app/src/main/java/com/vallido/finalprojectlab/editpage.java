@@ -1,5 +1,6 @@
 package com.vallido.finalprojectlab;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -67,11 +68,15 @@ public class editpage extends AppCompatActivity {
                 } catch (Exception e ){
                     e.printStackTrace();
                 }
-                Intent i = new Intent(getApplicationContext(), medicalid.class);
-                i.putExtra("name", name);
-                setResult(2, i);
-                startActivity(i);
 
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("name",name);
+                returnIntent.putExtra("dob",dob);
+                returnIntent.putExtra("bt",bt);
+                returnIntent.putExtra("ht",ht);
+                returnIntent.putExtra("wt",wt);
+                setResult(Activity.RESULT_OK,returnIntent);
+                finish();
             }
         });
     }
