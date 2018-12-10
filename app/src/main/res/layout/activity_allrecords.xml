@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.826" />
 
     <Button
@@ -35,7 +35,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.826" />
 
     <Button
@@ -50,7 +50,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.831" />
     <TextView
         android:id="@+id/textView30"
@@ -94,13 +94,13 @@
         app:layout_constraintVertical_bias="0.089" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/Deets1"
         android:layout_width="333dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:background="#FF9A3643"
-        android:text="Name: Juan Dela Cruz"
+        android:hint="Name: Juan Dela Cruz"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -118,7 +118,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:background="#FF9A3643"
-        android:text="Date of Check up: May 19, 2017"
+        android:hint="Date of Check up: May 19, 2017"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -126,17 +126,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        app:layout_constraintTop_toBottomOf="@+id/Deets1" />
 
     <TextView
-        android:id="@+id/textView43"
+        android:id="@+id/Deets2"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:background="#FF9A3643"
-        android:text="Symptoms: Cold, Cough"
+        android:hint="Symptoms: Cold, Cough"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -147,14 +147,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/Deets3"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:background="#FF9A3643"
-        android:text="Findings: Influenza"
+        android:hint="Findings: Influenza"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -162,7 +162,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+        app:layout_constraintTop_toBottomOf="@+id/Deets2" />
 
     <ImageView
         android:id="@+id/imageView7"

@@ -31,7 +31,84 @@ public class medicalid extends AppCompatActivity {
         textWt = findViewById(R.id.wt2);
         editButton = findViewById(R.id.edit);
 
+        String filename1="flname.txt";
+        StringBuffer name = new StringBuffer();
+        try {
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(openFileInput(filename1)));
+            String inputString;
 
+            while ((inputString = inputReader.readLine()) != null) {
+                name.append(inputString + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String filename2="fldob.txt";
+        StringBuffer dob = new StringBuffer();
+        try {
+
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(openFileInput(filename2)));
+            String inputString;
+
+            while ((inputString = inputReader.readLine()) != null) {
+                dob.append(inputString + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String filename3="flbt.txt";
+        StringBuffer bt = new StringBuffer();
+        try {
+
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                    openFileInput(filename3)));
+            String inputString;
+
+            while ((inputString = inputReader.readLine()) != null) {
+                bt.append(inputString + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String filename4="flht.txt";
+        StringBuffer ht = new StringBuffer();
+        try {
+
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                    openFileInput(filename4)));
+            String inputString;
+
+            while ((inputString = inputReader.readLine()) != null) {
+                ht.append(inputString + "\n");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String filename5="flwt.txt";
+        StringBuffer wt = new StringBuffer();
+        try {
+
+            BufferedReader inputReader = new BufferedReader(new InputStreamReader(
+                    openFileInput(filename5)));
+            String inputString;
+
+            while ((inputString = inputReader.readLine()) != null) {
+                wt.append(inputString + "\n");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        textName.setText(name.toString());
+        textDob.setText(dob.toString());
+        textBt.setText(bt.toString());
+        textHt.setText(ht.toString());
+        textWt.setText(wt.toString());
 
         editButton.setOnClickListener(new OnClickListener() {
             @Override

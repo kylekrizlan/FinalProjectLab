@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.826" />
 
     <Button
@@ -35,7 +35,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.826" />
 
     <Button
@@ -50,7 +50,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/Deets3"
         app:layout_constraintVertical_bias="0.831" />
 
     <TextView
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.131" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/Deets1"
         android:layout_width="333dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -127,10 +127,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        app:layout_constraintTop_toBottomOf="@+id/Deets1" />
 
     <TextView
-        android:id="@+id/textView43"
+        android:id="@+id/Deets2"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -177,7 +177,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/Deets2"
         app:layout_constraintVertical_bias="0.131" />
 
 
