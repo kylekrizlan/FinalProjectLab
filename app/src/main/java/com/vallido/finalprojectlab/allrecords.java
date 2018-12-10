@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class allrecords extends AppCompatActivity {
@@ -26,6 +27,18 @@ public class allrecords extends AppCompatActivity {
                 //Write your code if there's no result
             }
         }
+    }
+    public void toMedication(View view) {
+        Intent i = new Intent(getApplicationContext(), medication.class);
+        startActivity(i);
+    }
+    public void toHealthrecord(View view) {
+        Intent i = new Intent (getApplicationContext(), healthrecords.class);
+        startActivity(i);
+    }
+    public void toMedicalID(View view) {
+        Intent i = new Intent (getApplicationContext(), medicalid.class);
+        startActivity(i);
     }
 }
 
